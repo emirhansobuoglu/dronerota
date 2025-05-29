@@ -1,0 +1,368 @@
+{
+    "drones": [
+        {
+            "id": 0,
+            "max_weight": 4.36,
+            "battery": 4284,
+            "speed": 12.8,
+            "start_pos": [
+                39,
+                14
+            ]
+        },
+        {
+            "id": 1,
+            "max_weight": 4.29,
+            "battery": 6857,
+            "speed": 13.8,
+            "start_pos": [
+                43,
+                76
+            ]
+        },
+        {
+            "id": 2,
+            "max_weight": 2.15,
+            "battery": 4724,
+            "speed": 11.4,
+            "start_pos": [
+                12,
+                12
+            ]
+        },
+        {
+            "id": 3,
+            "max_weight": 2.05,
+            "battery": 5184,
+            "speed": 10.6,
+            "start_pos": [
+                6,
+                13
+            ]
+        },
+        {
+            "id": 4,
+            "max_weight": 3.64,
+            "battery": 6096,
+            "speed": 13.7,
+            "start_pos": [
+                0,
+                79
+            ]
+        }
+    ],
+    "deliveries": [
+        {
+            "id": 0,
+            "pos": [
+                76,
+                29
+            ],
+            "weight": 2.65,
+            "priority": 2,
+            "time_window": [
+                "09:31",
+                "10:54"
+            ]
+        },
+        {
+            "id": 1,
+            "pos": [
+                31,
+                51
+            ],
+            "weight": 2.21,
+            "priority": 1,
+            "time_window": [
+                "09:18",
+                "10:34"
+            ]
+        },
+        {
+            "id": 2,
+            "pos": [
+                87,
+                70
+            ],
+            "weight": 1.31,
+            "priority": 3,
+            "time_window": [
+                "09:07",
+                "09:40"
+            ]
+        },
+        {
+            "id": 3,
+            "pos": [
+                9,
+                27
+            ],
+            "weight": 2.87,
+            "priority": 1,
+            "time_window": [
+                "09:05",
+                "09:54"
+            ]
+        },
+        {
+            "id": 4,
+            "pos": [
+                77,
+                36
+            ],
+            "weight": 2.37,
+            "priority": 2,
+            "time_window": [
+                "09:23",
+                "10:48"
+            ]
+        },
+        {
+            "id": 5,
+            "pos": [
+                50,
+                26
+            ],
+            "weight": 0.51,
+            "priority": 3,
+            "time_window": [
+                "09:04",
+                "09:47"
+            ]
+        },
+        {
+            "id": 6,
+            "pos": [
+                12,
+                13
+            ],
+            "weight": 3.0,
+            "priority": 4,
+            "time_window": [
+                "09:43",
+                "10:32"
+            ]
+        },
+        {
+            "id": 7,
+            "pos": [
+                10,
+                47
+            ],
+            "weight": 2.16,
+            "priority": 5,
+            "time_window": [
+                "09:30",
+                "10:46"
+            ]
+        },
+        {
+            "id": 8,
+            "pos": [
+                82,
+                40
+            ],
+            "weight": 1.39,
+            "priority": 3,
+            "time_window": [
+                "09:54",
+                "10:31"
+            ]
+        },
+        {
+            "id": 9,
+            "pos": [
+                54,
+                78
+            ],
+            "weight": 1.82,
+            "priority": 4,
+            "time_window": [
+                "09:24",
+                "10:19"
+            ]
+        },
+        {
+            "id": 10,
+            "pos": [
+                28,
+                7
+            ],
+            "weight": 2.02,
+            "priority": 4,
+            "time_window": [
+                "09:19",
+                "09:49"
+            ]
+        },
+        {
+            "id": 11,
+            "pos": [
+                18,
+                62
+            ],
+            "weight": 2.93,
+            "priority": 5,
+            "time_window": [
+                "09:21",
+                "10:40"
+            ]
+        },
+        {
+            "id": 12,
+            "pos": [
+                98,
+                64
+            ],
+            "weight": 0.75,
+            "priority": 1,
+            "time_window": [
+                "09:00",
+                "10:30"
+            ]
+        },
+        {
+            "id": 13,
+            "pos": [
+                16,
+                22
+            ],
+            "weight": 1.06,
+            "priority": 3,
+            "time_window": [
+                "09:38",
+                "10:19"
+            ]
+        },
+        {
+            "id": 14,
+            "pos": [
+                96,
+                37
+            ],
+            "weight": 2.49,
+            "priority": 2,
+            "time_window": [
+                "09:08",
+                "10:14"
+            ]
+        },
+        {
+            "id": 15,
+            "pos": [
+                76,
+                52
+            ],
+            "weight": 1.42,
+            "priority": 1,
+            "time_window": [
+                "09:19",
+                "10:46"
+            ]
+        },
+        {
+            "id": 16,
+            "pos": [
+                70,
+                43
+            ],
+            "weight": 1.35,
+            "priority": 1,
+            "time_window": [
+                "09:26",
+                "10:34"
+            ]
+        },
+        {
+            "id": 17,
+            "pos": [
+                31,
+                27
+            ],
+            "weight": 1.39,
+            "priority": 3,
+            "time_window": [
+                "09:34",
+                "10:59"
+            ]
+        },
+        {
+            "id": 18,
+            "pos": [
+                51,
+                49
+            ],
+            "weight": 2.69,
+            "priority": 5,
+            "time_window": [
+                "09:07",
+                "10:35"
+            ]
+        },
+        {
+            "id": 19,
+            "pos": [
+                38,
+                21
+            ],
+            "weight": 2.48,
+            "priority": 5,
+            "time_window": [
+                "09:36",
+                "10:28"
+            ]
+        }
+    ],
+    "no_fly_zones": [
+        {
+            "id": 0,
+            "coordinates": [
+                [
+                    27,
+                    41
+                ],
+                [
+                    38,
+                    41
+                ],
+                [
+                    38,
+                    52
+                ],
+                [
+                    27,
+                    52
+                ]
+            ],
+            "active_time": [
+                "09:22",
+                "10:39"
+            ]
+        },
+        {
+            "id": 1,
+            "coordinates": [
+                [
+                    42,
+                    55
+                ],
+                [
+                    47,
+                    55
+                ],
+                [
+                    47,
+                    60
+                ],
+                [
+                    42,
+                    60
+                ]
+            ],
+            "active_time": [
+                "09:52",
+                "10:34"
+            ]
+        }
+    ]
+}
