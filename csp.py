@@ -1,32 +1,28 @@
 from datetime import datetime
 
-def parse_time(time_str: str) -> datetime:
-    """
-    Saat string'ini datetime objesine çevirir.
-    Örn: "09:30" → datetime(2025, 1, 1, 9, 30)
-    """
-    return datetime.strptime(time_str, "%H:%M")
+def time_str_to_minutes(time_str):
+    """HH:MM formatındaki zamanı dakika cinsine çevirir"""
+    h, m = map(int, time_str.split(":"))
+    return h * 60 + m
 
-def is_valid_delivery(drone: dict, delivery: dict, current_time: str = "09:30") -> bool:
+def is_valid_delivery(drone, delivery, now):
     """
-    Bir drone'un belirli bir teslimatı yapıp yapamayacağını kontrol eder.
-    Kısıtlar:
-      - Teslimatın ağırlığı drone'un kapasitesini aşmamalı.
-      - Şu anki saat teslimat zaman aralığı içinde olmalı.
-
+    CSP kurallarına göre bir teslimatın geçerli olup olmadığını kontrol eder.
     Parametreler:
-      - drone: {"max_weight": float, ...}
-      - delivery: {"weight": float, "time_window": ["HH:MM", "HH:MM"]}
-      - current_time: "HH:MM" formatında saat (default: 09:30)
-
-    Geri dönüş:
-      - True: Teslimat yapılabilir
-      - False: Kısıtlardan biri ihlal edilmiş
+        drone: drone sözlüğü
+        delivery: teslimat sözlüğü
+        now: dakika cinsinden int zaman (örnek: 570 = 09:30)
     """
-    now = parse_time(current_time)
-    start, end = map(parse_time, delivery["time_window"])
+    # Ağırlık kontrolü
+    if delivery["weight"] > drone["max_weight"]:
+        return False
 
+    # Zaman aralığını dakikaya çevir
+    start_str, end_str = delivery["time_window"]
+    start = time_str_to_minutes(start_str)
+    end = time_str_to_minutes(end_str)
+
+    # now zaten int dakika olarak geliyor
     in_time_window = start <= now <= end
-    weight_ok = delivery["weight"] <= drone["max_weight"]
 
-    return in_time_window and weight_ok
+    return in_time_window
